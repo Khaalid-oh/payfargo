@@ -32,7 +32,7 @@ export default async function ContactPage({ params }: Props) {
         <ContactPageHero />
       </div>
       <ContactPageBody />
-      <SiteFooter />
+      <SiteFooter topSpacingClassName="mt-10 sm:mt-20 md:mt-24" />
     </>
   );
 }

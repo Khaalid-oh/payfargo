@@ -29,11 +29,11 @@ export async function ContactPageBody() {
 
   return (
     <section
-      className="bg-white py-16 sm:py-20 md:py-24"
+      className="bg-white pt-12 pb-6 sm:pt-16 sm:pb-16 md:py-24"
       aria-labelledby="contact-form-heading"
     >
       <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-0">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="grid grid-cols-1 items-start gap-8 sm:gap-10 lg:grid-cols-2 lg:items-center lg:gap-16">
           <div>
             <h2
               id="contact-form-heading"
@@ -48,7 +48,7 @@ export async function ContactPageBody() {
               <ContactForm />
             </div>
           </div>
-          <div className="relative aspect-4/5 w-full overflow-hidden bg-neutral-100 shadow-sm ring-1 ring-black/5 lg:aspect-3/4 lg:max-h-[min(720px,85vh)] lg:min-h-[420px]">
+          <div className="relative hidden sm:block aspect-4/5 w-full overflow-hidden bg-neutral-100 shadow-sm ring-1 ring-black/5 lg:aspect-3/4 lg:max-h-[min(720px,85vh)] lg:min-h-[420px]">
             <Image
               src="/images/contact_pics.png"
               alt={t("contactImageAlt")}

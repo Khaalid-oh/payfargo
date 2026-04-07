@@ -99,7 +99,7 @@ export function AboutLocationsMap() {
                       {t("tooltipLine2")}
                     </p>
                     <span
-                      className="pointer-events-none absolute left-1/2 top-full z-10 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-45 border-r border-b border-black/[0.08] bg-white shadow-[0_2px_4px_-2px_rgba(15,23,42,0.12)] sm:h-3 sm:w-3"
+                      className="pointer-events-none absolute left-1/2 top-full z-10 h-2.5 w-2.5 -translate-x-1/2 -translate-y-1/2 rotate-45 border-r border-b border-black/8 bg-white shadow-[0_2px_4px_-2px_rgba(15,23,42,0.12)] sm:h-3 sm:w-3"
                       aria-hidden
                     />
                   </div>

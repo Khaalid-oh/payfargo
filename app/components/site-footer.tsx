@@ -99,7 +99,14 @@ function NewsletterForm({
   );
 }
 
-export function SiteFooter() {
+type SiteFooterProps = {
+  /** Override default mt-24 (e.g. tighter gap above footer on mobile contact page) */
+  topSpacingClassName?: string;
+};
+
+export function SiteFooter({
+  topSpacingClassName = "mt-24",
+}: SiteFooterProps = {}) {
   const t = useTranslations("footer");
 
   const companyLinks = useMemo(
@@ -118,7 +125,7 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-24 bg-black text-white">
+    <footer className={`${topSpacingClassName} bg-black text-white`}>
       <div className="mx-auto max-w-7xl px-4 py-14 sm:py-16 lg:px-8 lg:py-20">
         <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           <div>
