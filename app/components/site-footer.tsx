@@ -176,10 +176,10 @@ export function SiteFooter({
                 {t("needHelp")}
               </p>
               <a
-                href="mailto:support@useparfargo.com"
+                href="mailto:info@payfargo.com"
                 className="mt-4 inline-block text-sm text-white/90 underline-offset-2 transition hover:text-white hover:underline"
               >
-                support@useparfargo.com
+                Info@payfargo.com
               </a>
             </div>
             <div>
