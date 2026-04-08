@@ -185,7 +185,7 @@ export function HeroCurrencyConverter() {
         borderBottomRightRadius: "2.5rem",
       }}
     >
-      <div className="mb-3 flex w-full flex-wrap items-center gap-1.5 rounded-full bg-[#E8EEFC] px-3 py-1.5 pr-4 text-xs font-medium text-[#133DBF] sm:mb-4 sm:inline-flex sm:w-auto sm:px-4 sm:pr-5">
+      <div className="mb-3 inline-flex items-center gap-1.5 rounded-full bg-[#E8EEFC] py-1.5 text-xs font-medium text-[#133DBF] sm:mb-4 sm:w-auto px-4 pr-5">
         <TrendIcon />
         <span className="text-xs font-medium text-[#133DBF] sm:text-sm">
           {rateLabel}

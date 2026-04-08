@@ -235,6 +235,7 @@ export function HeroSiteHeader() {
             priority
             quality={100}
             className="h-6 w-auto sm:h-5"
+            style={{ width: "auto" }}
           />
         </Link>
 

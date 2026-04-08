@@ -11,24 +11,8 @@ import { HeroSiteHeader } from "../components/hero-site-header";
 import { SeamlessTransfersSection } from "../components/seamless-transfers-section";
 import { SiteFooter } from "../components/site-footer";
 import { WhyChoosePayfargoSection } from "../components/why-choose-payfargo-section";
-
-function PhoneIcon({ className }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      width="22"
-      height="22"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.75"
-      aria-hidden
-    >
-      <rect x="7" y="3" width="10" height="18" rx="2" />
-      <path d="M10 18h4" strokeLinecap="round" />
-    </svg>
-  );
-}
+import BankIcon from "../components/bank-icon";
+import WalletIcon from "../components/wallet-icon";
 
 const FLAG_EMOJI = ["EU", "AU", "GB", "US", "SA", "JM", "ME", "UA"] as const;
 
@@ -230,16 +214,49 @@ export default async function Home({ params }: Props) {
                 borderBottomRightRadius: "2.5rem",
               }}
             >
-              <p className="text-base font-medium text-[#133DBF]">
+              <p className="text-sm sm:text-base font-medium text-[#133DBF]">
                 {t("paymentChannel")}
               </p>
-              <div className="mt-3 flex items-center gap-3 rounded-md border border-neutral-200 px-4 py-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#E8EEFC] text-[#133DBF]">
-                  <PhoneIcon />
-                </span>
-                <span className="font-medium text-[#133DBF]">
-                  {t("mobileMoney")}
-                </span>
+              <div className="mt-3 flex w-full min-w-0 items-stretch rounded-md border border-[#133DBF] px-2 py-2.5 sm:px-4 sm:py-3">
+                <div className="flex min-w-0 flex-1 items-center justify-center gap-1.5 sm:gap-2.5">
+                  <BankIcon
+                    size={28}
+                    className="shrink-0 sm:hidden"
+                    aria-hidden
+                  />
+                  <BankIcon
+                    size={36}
+                    className="hidden shrink-0 sm:block"
+                    aria-hidden
+                  />
+                  <span className="whitespace-nowrap text-sm font-medium text-[#133DBF] sm:text-base">
+                    {t("bankAccount")}
+                  </span>
+                </div>
+                <div
+                  className="flex shrink-0 items-center px-1.5 sm:px-3"
+                  aria-hidden
+                >
+                  <span className="h-7 w-px self-center bg-[#133DBF] sm:h-8" />
+                </div>
+                <div className="flex min-w-0 flex-1 items-center justify-center gap-1.5 sm:gap-2.5">
+                  <WalletIcon
+                    size={28}
+                    className="shrink-0 sm:hidden"
+                    aria-hidden
+                  />
+                  <WalletIcon
+                    size={36}
+                    className="hidden shrink-0 sm:block"
+                    aria-hidden
+                  />
+                  <span className="whitespace-nowrap text-sm font-medium text-[#133DBF] sm:text-base sm:hidden">
+                    {t("mobileWallet")}
+                  </span>
+                  <span className="hidden whitespace-nowrap font-medium text-[#133DBF] sm:inline sm:text-base">
+                    {t("mobileWallet")}
+                  </span>
+                </div>
               </div>
             </div>
           </section>

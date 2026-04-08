@@ -136,6 +136,7 @@ export function SiteFooter({
                 width={140}
                 height={36}
                 className="h-8 w-auto brightness-0 invert"
+                style={{ width: "auto" }}
               />
             </Link>
             <p className="mt-6 text-sm text-neutral-400">

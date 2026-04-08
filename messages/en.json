@@ -40,7 +40,9 @@
     "downloadAppAria": "Download app",
     "getStarted": "Get Started Now",
     "paymentChannel": "Payment channel:",
-    "mobileMoney": "Mobile Money",
+    "bankAccount": "Bank Account",
+    "mobileWallet": "Mobile wallet",
+    "walletShort": "Wallet",
     "partnersAria": "Technology partners"
   },
   "converter": {
